@@ -1,0 +1,82 @@
+.bgImg {
+    width: 100%;
+    height: 500px;
+    background-image: url("/images/home.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bgColor {
+    background-color: rgba(93, 69, 123, 0.7);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeTitle {
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #DAF055, #FFFFFC);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.homeDate {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.homeBtn {
+    text-transform: uppercase;
+    color: #D9EF53;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border: 1px solid #DAF055;
+    cursor: pointer;
+    transition: background-color, border, letter-spacing;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    span {
+        letter-spacing: normal;
+    }
+
+    &:hover {
+        letter-spacing: .3rem;
+        background-color: #DAF055;
+        color: black;
+    }
+}
+
+.winnerBtn {
+    background-color: #DAF055;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+
+    &:hover .winnerText {
+        letter-spacing: .3rem;
+    }
+}
+
+.winnerText {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: letter-spacing .2s ease;
+}
