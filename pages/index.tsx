@@ -23,15 +23,17 @@ const Home: NextPage = () => {
 
 			<div className={styles.bgImg}>
 				<div className={styles.bgColor}>
-					<h1 className={styles.homeTitle}>Welcome to Austin</h1>
-					<p className={styles.homeDate}>APRIL 20-24 2023</p>
-					<a className={styles.homeBtn}>Registe<span>r</span></a>
+					<div className={styles.homeInfo}>
+						<h1 className={styles.homeTitle}>Welcome to Austin</h1>
+						<p className={styles.homeDate}>APRIL 20-24 2023</p>
+						<a className={styles.homeBtn}>Registe<span>r</span></a>
+					</div>
 				</div>
 			</div>
 
-			<div className={styles.winnerBtn}>
+			{/* <div className={styles.winnerBtn}>
 				<a className={styles.winnerText}>winners</a>
-			</div>
+			</div> */}
 
 			<div className={styles.keynoteImg}>
 				<div className={styles.keynoteBgColor}>
