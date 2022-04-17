@@ -2,8 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Footer from '../comps/Footer';
 
 const Home: NextPage = () => {
+
+	const numOfSpeakers: number[] = [1, 1, 1];
+
 	return (
 		<>
 			<Head>
@@ -27,9 +31,110 @@ const Home: NextPage = () => {
 				<a className={styles.winnerText}>winners</a>
 			</div>
 
-			<div className={styles.keynote}>
-			
+			<div className={styles.keynoteImg}>
+				<div className={styles.keynoteBgColor}>
+
+					<p className={styles.keynoteTitle}>Keynotes</p>
+
+					<a className={styles.keynoteSpeakers}>
+						{numOfSpeakers.map((x, index) => {
+							return (
+								<div className={styles.keynoteSpeaker} key={index}>
+									{/* <Image></Image> */}
+									<div className={styles.keynoteImg}></div>
+									<p className={styles.keynoteName}>Speaker Name</p>
+								</div>
+							)
+						})}
+					</a >
+
+					<div className={styles.keynoteOthers}>
+
+						<a className={styles.keynoteOther}>
+							<div className={styles.otherTitle}>
+								<span>Schedule</span>
+							</div>
+							<div className={styles.otherImgWrapper}>
+								<div className={styles.otherImg}>
+									<div className={styles.otherBgColor}></div>
+								</div>
+							</div>
+						</a>
+
+						<a className={styles.keynoteOther}>
+							<div className={styles.otherTitle}>
+								<span>About the City</span>
+							</div>
+							<div className={styles.otherImgWrapper}>
+								<div className={styles.otherImg2}>
+									<div className={styles.otherBgColor}></div>
+								</div>
+							</div>
+						</a >
+					</div>
+				</div>
 			</div>
+
+			<div className={styles.sponsors}>
+				<p className={styles.sponsorTitle}>Sponsors</p>
+
+				<p className={styles.sponsorRank}>Dimond</p>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<p className={styles.sponsorRank}>Glod</p>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<p className={styles.sponsorRank}>Silver</p>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<p className={styles.sponsorRank}>Bronze</p>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<p className={styles.sponsorRank}>Other</p>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+				</div>
+
+				<div className={styles.sponsorWrapper}>
+					<div className={styles.sponsorCard}></div>
+					<div className={styles.sponsorCard}></div>
+				</div>
+			</div>
+
+			<Footer/>
 		</>
 	)
 }
