@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Footer from '../comps/Footer';
+import NavBar from '../comps/NavBar';
 
 const Home: NextPage = () => {
 
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
 
 	return (
 		<>
+			<NavBar />
 			<Head>
 				<title>World Wide Web Conference 2023</title>
 				<meta name="description" content="World Wide Web Conference 2023, Austin TX" />
@@ -40,7 +42,6 @@ const Home: NextPage = () => {
 						{numOfSpeakers.map((x, index) => {
 							return (
 								<div className={styles.keynoteSpeaker} key={index}>
-									{/* <Image></Image> */}
 									<div className={styles.keynoteImg}></div>
 									<p className={styles.keynoteName}>Speaker Name</p>
 								</div>
@@ -134,7 +135,7 @@ const Home: NextPage = () => {
 				</div>
 			</div>
 
-			<Footer/>
+			<Footer />
 		</>
 	)
 }
