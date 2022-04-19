@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 		<>
 			<NavBar />
 			<Head>
-				<title>World Wide Web Conference 2023</title>
+				<title>International World Wide Web Conference 2023</title>
 				<meta name="description" content="World Wide Web Conference 2023, Austin TX" />
 				<meta name='keywords' content='' />
 				<meta name='author' content='The University of Texas at Austin, School of Information' />
@@ -24,9 +24,9 @@ const Home: NextPage = () => {
 			<div className={styles.bgImg}>
 				<div className={styles.bgColor}>
 					<div className={styles.homeInfo}>
-						<h1 className={styles.homeTitle}>Welcome to Austin</h1>
-						<p className={styles.homeDate}>APRIL 20-24 2023</p>
-						<a className={styles.homeBtn}>Registe<span>r</span></a>
+						<h1 className={styles.homeTitle}>Welcome to The Web Conference 2023 in Austin, Texas, USA</h1>
+						<p className={styles.homeDate}>May 1-5, 2023</p>
+						<a className={styles.homeBtn}>More Info Soon</a>
 					</div>
 				</div>
 			</div>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 				<a className={styles.winnerText}>winners</a>
 			</div> */}
 
-			<div className={styles.keynoteImg}>
+			{/* <div className={styles.keynoteImg}>
 				<div className={styles.keynoteBgColor}>
 
 					<p className={styles.keynoteTitle}>Keynotes</p>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
 					<div className={styles.sponsorCard}></div>
 					<div className={styles.sponsorCard}></div>
 				</div>
-			</div>
+			</div> */}
 
 			<Footer />
 		</>
