@@ -137,6 +137,13 @@ const Home: NextPage = () => {
 				</div>
 			</div> */}
 
+			<div className={styles.organizer}>
+				<p>- Organized by -</p>
+				<div>
+					<img src="/dataWorld.webp" alt="data world logo" className={styles.dw} />
+					<img src="/ischool.png" alt="ischool logo" className={styles.is} />
+				</div>
+			</div>
 			<Footer />
 		</>
 	)

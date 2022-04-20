@@ -302,3 +302,41 @@
     height: 50px;
     margin: 10px
 }
+
+.Home_organizer__gzhl_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.Home_organizer__gzhl_ p {
+    font-size: 1rem;
+    text-transform: uppercase
+}
+
+.Home_organizer__gzhl_ div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+@media only screen and (max-width:700px) {
+    .Home_organizer__gzhl_ div {
+        flex-direction: column
+    }
+}
+
+.Home_organizer__gzhl_ div .Home_dw__KmwL1 {
+    width: 200px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 20px
+}
+
+.Home_organizer__gzhl_ div .Home_is__p6VEd {
+    width: 300px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 20px
+}
