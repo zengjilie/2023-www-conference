@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 			<Head>
 				<title>International World Wide Web Conference 2023</title>
 				<meta name="description" content="World Wide Web Conference 2023, Austin TX" />
-				<meta name='keywords' content='' />
+				{/* <meta name='keywords' content='' /> */}
 				<meta name='author' content='The University of Texas at Austin, School of Information' />
 				<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 				<link rel="icon" href="/favicon.ico" />

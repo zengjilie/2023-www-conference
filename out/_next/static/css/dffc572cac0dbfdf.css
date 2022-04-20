@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(30vh)
+    transform: translateY(25vh)
 }
 
 .Home_homeInfo__U_ifu .Home_homeTitle__zRG93 {
@@ -85,7 +85,7 @@
 
 @media only screen and (min-width:1000px) {
     .Home_homeInfo__U_ifu .Home_homeTitle__zRG93 {
-        font-size: 5rem;
+        font-size: 4rem;
         letter-spacing: .2rem
     }
 }
@@ -153,7 +153,7 @@
 
 .Home_keynoteImg__xlEgU {
     width: 100%;
-    background-image: url(../../../images/austin.jpeg);
+    background-image: url(/images/austin.jpeg);
     background-size: cover;
     background-position: 50%
 }
@@ -247,7 +247,7 @@
 .Home_keynoteImg__xlEgU .Home_keynoteBgColor__LD3NJ .Home_keynoteOthers__n_tLS .Home_keynoteOther__Lfx24 .Home_otherImgWrapper__s7ppc .Home_otherImg__X60ys {
     width: 100%;
     height: 100%;
-    background-image: url(../../../images/conference.jpeg);
+    background-image: url(/images/conference.jpeg);
     background-size: contain
 }
 
