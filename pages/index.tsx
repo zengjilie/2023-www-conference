@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Footer from '../comps/Footer';
 import NavBar from '../comps/NavBar';
+import OrganizerCard from '../comps/OrganizerCard';
+import type { OrganizerType } from '../global/types';
 
 const Home: NextPage = () => {
 
@@ -138,10 +140,32 @@ const Home: NextPage = () => {
 			</div> */}
 
 			<div className={styles.organizer}>
-				<p>- Organized by -</p>
-				<div>
-					<img src="/dataWorld.webp" alt="data world logo" className={styles.dw} />
-					<img src="/ischool.png" alt="ischool logo" className={styles.is} />
+				<h1 className={styles.t1}> Committees </h1>
+
+				<p className={styles.t2}> General Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/ying-UT.jpeg" person="Ying Ding" affiliation="UT Austin" socialLink="https://yingding.ischool.utexas.edu/" />
+					<OrganizerCard image="/images/committee/JieTang.jpeg" person="Jie Tang" affiliation="Tsinghua University" socialLink="https://keg.cs.tsinghua.edu.cn/jietang/" />
+					<OrganizerCard image="/images/committee/JuanSequeda.webp" person="Juan Sequeda" affiliation="data.world" socialLink="https://juansequeda.com/" />
+				</div>
+
+				<p className={styles.t2}>Program Committee Co-Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/LoraAroyo.webp" person="Lora Aroyo" affiliation="Google" socialLink="https://lora-aroyo.org/" />
+					<OrganizerCard image="/images/committee/CarlosCastillo.webp" person="Carlos Castillo" affiliation="ICREA" socialLink="http://chato.cl/research/vitae" />
+				</div>
+
+				<p className={styles.t2}>Sponsor Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/ChenHuajun.jpeg" person="Chen Huajun" affiliation="Zhejiang University" socialLink="https://person.zju.edu.cn/en/huajun" />
+					<OrganizerCard image="/images/committee/EdgarMeij.jpeg" person="Edgar Meij" affiliation="Bloomberg" socialLink="https://edgar.meij.pro/" />
+					<OrganizerCard image="/images/committee/JoshuaShinavier.jpeg" person="Josh Shinavier" affiliation="Linkedin" socialLink="https://www.knowledgegraph.tech/speakers/joshua-shinavier/" />
+				</div>
+
+				<p className={styles.t2}>Organized by</p>
+				<div className={styles.orgSection} style={{ flexDirection: 'column' }}>
+					<img src="/ischool.png" alt="" width="300px" style={{ margin: 20 }} />
+					<img src="/dataWorld.webp" alt="" width="200px" style={{ margin: 20 }} />
 				</div>
 			</div>
 			<Footer />

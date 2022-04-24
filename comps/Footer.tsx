@@ -14,7 +14,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className={styles.text}>The Web Conference 2023 is organized by The University of Texas at Austin, School of Information</p>
+      <p className={styles.text}>The Web Conference 2023 is organized by the School of Information at The University of Texas at Austin</p>
     </>
   )
 }

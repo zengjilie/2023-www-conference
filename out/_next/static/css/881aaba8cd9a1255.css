@@ -49,6 +49,52 @@
     cursor: pointer
 }
 
+.OrganizerCard_OrgWrapper__WiaY7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    box-shadow: 6px 15px 20px rgba(0, 0, 0, .07);
+    margin: 20px;
+    transition: box-shadow .4s ease
+}
+
+.OrganizerCard_OrgWrapper__WiaY7:hover {
+    box-shadow: 6px 15px 20px rgba(0, 0, 0, .15)
+}
+
+.OrganizerCard_OrgWrapper__WiaY7:hover .OrganizerCard_OrgImage__f7zNg img {
+    transform: scale(1.05)
+}
+
+.OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgImage__f7zNg {
+    width: 100%;
+    height: 320px;
+    margin: 0;
+    overflow: hidden
+}
+
+.OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgImage__f7zNg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform .3s ease
+}
+
+.OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgName__P2ith {
+    text-transform: none;
+    font-size: 1.2rem;
+    margin: 20px 20px 10px
+}
+
+.OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgAffiliation__POWdI {
+    text-transform: none;
+    color: gray;
+    margin: 10px 20px 20px
+}
+
 .Home_bgImg__FpRo4 {
     width: 100%;
     height: 80vh;
@@ -339,4 +385,17 @@
     -o-object-fit: contain;
     object-fit: contain;
     margin: 20px
+}
+
+.Home_t1__SPw_7 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-top: 50px
+}
+
+.Home_t2__AzbrZ {
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: .2rem
 }
