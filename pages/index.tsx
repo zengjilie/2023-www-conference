@@ -155,6 +155,24 @@ const Home: NextPage = () => {
 					<OrganizerCard image="/images/committee/CarlosCastillo.webp" person="Carlos Castillo" affiliation="ICREA" socialLink="http://chato.cl/research/vitae" />
 				</div>
 
+				<p className={styles.t2}>Tutorial Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/OlafHartig.jpeg" person="Olaf Hartig" affiliation="Linköping University" socialLink="http://olafhartig.de/" />
+					<OrganizerCard image="/images/committee/ValeriaFionda.jpeg" person="Valeria Fionda" affiliation="University of Calabria" socialLink="https://www.mat.unical.it/fionda/" />
+				</div>
+
+				<p className={styles.t2}>Workshop Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/RiccardoTommasini.jpeg" person="Riccardo Tommasini" affiliation="University of INSA Lyon" socialLink="https://riccardotommasini.com/" />
+					<OrganizerCard image="/images/committee/default.jpeg" person="TBA" affiliation="TBA" socialLink="#" />
+				</div>
+
+				<p className={styles.t2}>Industry Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/AnnaLisaGentile.jpeg" person="Anna Lisa Gentile" affiliation="IBM Research" socialLink="https://anligentile.github.io/" />
+					<OrganizerCard image="/images/committee/PetraSelmer.webp" person="Petra Selmer" affiliation="Neo4j" socialLink="https://www.linkedin.com/in/petra-selmer-phd-61b291/?originalSubdomain=uk" />
+				</div>
+
 				<p className={styles.t2}>Sponsor Chairs</p>
 				<div className={styles.orgSection}>
 					<OrganizerCard image="/images/committee/ChenHuajun.jpeg" person="Chen Huajun" affiliation="Zhejiang University" socialLink="https://person.zju.edu.cn/en/huajun" />
