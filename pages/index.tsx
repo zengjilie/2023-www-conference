@@ -164,7 +164,18 @@ const Home: NextPage = () => {
 				<p className={styles.t2}>Workshop Chairs</p>
 				<div className={styles.orgSection}>
 					<OrganizerCard image="/images/committee/RiccardoTommasini.jpeg" person="Riccardo Tommasini" affiliation="University of INSA Lyon" socialLink="https://riccardotommasini.com/" />
-					<OrganizerCard image="/images/committee/default.jpeg" person="TBA" affiliation="TBA" socialLink="#" />
+					<OrganizerCard image="/images/committee/FemkeOngenae.png" person="Femke Ongenae" affiliation="Ghent University" socialLink="https://sites.google.com/view/femkeongenae/home?authuser=0" />
+				</div>
+
+				<p className={styles.t2}>Posters and Demos Chairs</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/LorenaEtcheverry.jpeg" person="Lorena Etcheverry" affiliation="Universidad de la República de Uruguay" socialLink="https://www.researchgate.net/profile/Lorena-Etcheverry" />
+					<OrganizerCard image="/images/committee/MaríaPovedaVillalón.jpeg" person="María Poveda Villalón" affiliation="Universidad Politécnica de Madrid" socialLink="https://thepetiteontologist.wordpress.com/about/" />
+				</div>
+
+				<p className={styles.t2}>W3C and Developer</p>
+				<div className={styles.orgSection}>
+					<OrganizerCard image="/images/committee/PierreAntoineChampin.jpeg" person="Pierre-Antoine Champin" affiliation="Université Claude Bernard Lyon 1" socialLink="https://perso.liris.cnrs.fr/pierre-antoine.champin/en/" />
 				</div>
 
 				<p className={styles.t2}>Industry Chairs</p>

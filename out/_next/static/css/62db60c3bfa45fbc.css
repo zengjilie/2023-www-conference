@@ -86,13 +86,15 @@
 .OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgName__P2ith {
     text-transform: none;
     font-size: 1.2rem;
-    margin: 20px 20px 10px
+    margin: 20px 20px 10px;
+    text-align: center
 }
 
 .OrganizerCard_OrgWrapper__WiaY7 .OrganizerCard_OrgAffiliation__POWdI {
     text-transform: none;
     color: gray;
-    margin: 10px 20px 20px
+    margin: 10px 20px 20px;
+    text-align: center
 }
 
 .Home_bgImg__FpRo4 {
@@ -173,7 +175,7 @@
 }
 
 .Home_homeInfo__U_ifu .Home_homeBtn__LSD8r:hover {
-    letter-spacing: .25rem;
+    letter-spacing: .3rem;
     background-color: #daf055;
     color: #000
 }
