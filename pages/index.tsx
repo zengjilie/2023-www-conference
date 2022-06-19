@@ -153,6 +153,7 @@ const Home: NextPage = () => {
 				<div className={styles.orgSection}>
 					<OrganizerCard image="/images/committee/LoraAroyo.webp" person="Lora Aroyo" affiliation="Google" socialLink="https://lora-aroyo.org/" />
 					<OrganizerCard image="/images/committee/CarlosCastillo.webp" person="Carlos Castillo" affiliation="ICREA" socialLink="http://chato.cl/research/vitae" />
+					<OrganizerCard image="/images/committee/GeertJanHouben.jpeg" person="Geert-Jan Houben" affiliation="TU Delft" socialLink="https://www.wis.ewi.tudelft.nl/houben" />
 				</div>
 
 				<p className={styles.t2}>Tutorial Chairs</p>
@@ -170,7 +171,7 @@ const Home: NextPage = () => {
 				<p className={styles.t2}>Posters and Demos Chairs</p>
 				<div className={styles.orgSection}>
 					<OrganizerCard image="/images/committee/LorenaEtcheverry.jpeg" person="Lorena Etcheverry" affiliation="Universidad de la República de Uruguay" socialLink="https://www.researchgate.net/profile/Lorena-Etcheverry" />
-					<OrganizerCard image="/images/committee/MaríaPovedaVillalón.jpeg" person="María Poveda Villalón" affiliation="Universidad Politécnica de Madrid" socialLink="https://thepetiteontologist.wordpress.com/about/" />
+					<OrganizerCard image="/images/committee/MariaPovedaVillalon.jpeg" person="María Poveda Villalón" affiliation="Universidad Politécnica de Madrid" socialLink="https://thepetiteontologist.wordpress.com/about/" />
 				</div>
 
 				<p className={styles.t2}>W3C and Developer</p>
