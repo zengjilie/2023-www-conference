@@ -1,5 +1,5 @@
-interface OrganizerType {
-    image:string,
+interface CommitteeCardType {
+    imageUrl: string,
     person: string,
     affiliation: string,
     socialLink: string
@@ -11,4 +11,4 @@ type Person = {
 }
 
 
-export type { OrganizerType }
+export type { CommitteeCardType }

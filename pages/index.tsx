@@ -1,11 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
-import Footer from '../comps/Footer';
 import NavBar from '../comps/NavBar';
-import OrganizerCard from '../comps/OrganizerCard';
-import type { OrganizerType } from '../global/types';
+import Footer from '../comps/Footer';
+import CommitteeCard from '../comps/CommitteeCard';
 
 const Home: NextPage = () => {
 
@@ -14,6 +11,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<NavBar />
+
 			<Head>
 				<title>International World Wide Web Conference 2023</title>
 				<meta name="description" content="World Wide Web Conference 2023, Austin TX" />
@@ -23,181 +21,121 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div className={styles.bgImg}>
-				<div className={styles.bgColor}>
-					<div className={styles.homeInfo}>
-						<h1 className={styles.homeTitle}>Welcome to The Web Conference 2023 in Austin, Texas, USA</h1>
-						<p className={styles.homeDate}>May 1-5, 2023</p>
-						<a className={styles.homeBtn}>More Info Soon</a>
+			<div className="bg-img">
+				<div className="bg-color">
+					<div className="home-info">
+						<h1 className="home-title">Welcome to The Web Conference 2023 in Austin, Texas, USA</h1>
+						<p className="home-date">May 1-5, 2023</p>
+						<a className="home-btn">More Info Soon</a>
 					</div>
 				</div>
 			</div>
 
-			{/* <div className={styles.winnerBtn}>
-				<a className={styles.winnerText}>winners</a>
-			</div> */}
+			<div className="committee">
+				<h1 className="t1"> Committees </h1>
 
-			{/* <div className={styles.keynoteImg}>
-				<div className={styles.keynoteBgColor}>
-
-					<p className={styles.keynoteTitle}>Keynotes</p>
-
-					<a className={styles.keynoteSpeakers}>
-						{numOfSpeakers.map((x, index) => {
-							return (
-								<div className={styles.keynoteSpeaker} key={index}>
-									<div className={styles.keynoteImg}></div>
-									<p className={styles.keynoteName}>Speaker Name</p>
-								</div>
-							)
-						})}
-					</a >
-
-					<div className={styles.keynoteOthers}>
-
-						<a className={styles.keynoteOther}>
-							<div className={styles.otherTitle}>
-								<span>Schedule</span>
-							</div>
-							<div className={styles.otherImgWrapper}>
-								<div className={styles.otherImg}>
-									<div className={styles.otherBgColor}></div>
-								</div>
-							</div>
-						</a>
-
-						<a className={styles.keynoteOther}>
-							<div className={styles.otherTitle}>
-								<span>About the City</span>
-							</div>
-							<div className={styles.otherImgWrapper}>
-								<div className={styles.otherImg2}>
-									<div className={styles.otherBgColor}></div>
-								</div>
-							</div>
-						</a >
-					</div>
-				</div>
-			</div>
-
-			<div className={styles.sponsors}>
-				<p className={styles.sponsorTitle}>Sponsors</p>
-
-				<p className={styles.sponsorRank}>Dimond</p>
-
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2"> General Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/ying-UT.jpeg" person="Ying Ding" affiliation="UT Austin" socialLink="https://yingding.ischool.utexas.edu/" />
+					<CommitteeCard imageUrl="/images/committee/JieTang.jpeg" person="Jie Tang" affiliation="Tsinghua University" socialLink="https://keg.cs.tsinghua.edu.cn/jietang/" />
+					<CommitteeCard imageUrl="/images/committee/JuanSequeda.webp" person="Juan Sequeda" affiliation="data.world" socialLink="https://juansequeda.com/" />
 				</div>
 
-				<p className={styles.sponsorRank}>Glod</p>
-
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Program Committee Co-Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/LoraAroyo.webp" person="Lora Aroyo" affiliation="Google" socialLink="https://lora-aroyo.org/" />
+					<CommitteeCard imageUrl="/images/committee/CarlosCastillo.webp" person="Carlos Castillo" affiliation="ICREA" socialLink="http://chato.cl/research/vitae" />
+					<CommitteeCard imageUrl="/images/committee/GeertJanHouben.jpeg" person="Geert-Jan Houben" affiliation="TU Delft" socialLink="https://www.wis.ewi.tudelft.nl/houben" />
 				</div>
 
-				<p className={styles.sponsorRank}>Silver</p>
-
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Tutorial Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/OlafHartig.jpeg" person="Olaf Hartig" affiliation="Linköping University" socialLink="http://olafhartig.de/" />
+					<CommitteeCard imageUrl="/images/committee/ValeriaFionda.jpeg" person="Valeria Fionda" affiliation="University of Calabria" socialLink="https://www.mat.unical.it/fionda/" />
 				</div>
 
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Workshop Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/RiccardoTommasini.jpeg" person="Riccardo Tommasini" affiliation="University of INSA Lyon" socialLink="https://riccardotommasini.com/" />
+					<CommitteeCard imageUrl="/images/committee/FemkeOngenae.png" person="Femke Ongenae" affiliation="Ghent University" socialLink="https://sites.google.com/view/femkeongenae/home?authuser=0" />
 				</div>
 
-				<p className={styles.sponsorRank}>Bronze</p>
-
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Posters and Demos Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/LorenaEtcheverry.jpeg" person="Lorena Etcheverry" affiliation="Universidad de la República de Uruguay" socialLink="https://www.researchgate.net/profile/Lorena-Etcheverry" />
+					<CommitteeCard imageUrl="/images/committee/MariaPovedaVillalon.jpeg" person="María Poveda Villalón" affiliation="Universidad Politécnica de Madrid" socialLink="https://thepetiteontologist.wordpress.com/about/" />
 				</div>
 
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">PhD Symposium Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Yizhou Sun.jpeg" person="Yizhou Sun" affiliation="UCLA" socialLink="http://web.cs.ucla.edu/~yzsun/" />
+					<CommitteeCard imageUrl="/images/committee/Yuxiao Dong.jpeg" person="Yuxiao Dong" affiliation="Tsinghua University" socialLink="https://keg.cs.tsinghua.edu.cn/yuxiao/" />
+					<CommitteeCard imageUrl="/images/committee/Mayank Kejriwal.jpeg" person="Mayank Kejriwal" affiliation="ISI/USC" socialLink="https://usc-isi-i2.github.io/kejriwal/" />
 				</div>
 
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Diversity, Equity, Inclusion Chairs </p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Sarah Luger.jpeg" person="Sarah Luger" affiliation="Oriange Silicon Valley" socialLink="https://www.linkedin.com/in/sarahluger/" />
+					<CommitteeCard imageUrl="/images/committee/Tiffany Deng.jpeg" person="Tiffany Deng" affiliation="Google" socialLink="https://www.linkedin.com/in/tiffanydeng/" />
 				</div>
 
-				<p className={styles.sponsorRank}>Other</p>
-
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
+				<p className="t2">Industry Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/AnnaLisaGentile.jpeg" person="Anna Lisa Gentile" affiliation="IBM Research" socialLink="https://anligentile.github.io/" />
+					<CommitteeCard imageUrl="/images/committee/PetraSelmer.webp" person="Petra Selmer" affiliation="Neo4j" socialLink="https://www.linkedin.com/in/petra-selmer-phd-61b291/?originalSubdomain=uk" />
 				</div>
 
-				<div className={styles.sponsorWrapper}>
-					<div className={styles.sponsorCard}></div>
-					<div className={styles.sponsorCard}></div>
-				</div>
-			</div> */}
-
-			<div className={styles.organizer}>
-				<h1 className={styles.t1}> Committees </h1>
-
-				<p className={styles.t2}> General Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/ying-UT.jpeg" person="Ying Ding" affiliation="UT Austin" socialLink="https://yingding.ischool.utexas.edu/" />
-					<OrganizerCard image="/images/committee/JieTang.jpeg" person="Jie Tang" affiliation="Tsinghua University" socialLink="https://keg.cs.tsinghua.edu.cn/jietang/" />
-					<OrganizerCard image="/images/committee/JuanSequeda.webp" person="Juan Sequeda" affiliation="data.world" socialLink="https://juansequeda.com/" />
+				<p className="t2">W3C and Developer</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/PierreAntoineChampin.jpeg" person="Pierre-Antoine Champin" affiliation="Université Claude Bernard Lyon 1" socialLink="https://perso.liris.cnrs.fr/pierre-antoine.champin/en/" />
+					<CommitteeCard imageUrl="/images/committee/default.jpeg" person="TBC" affiliation="TBC" socialLink="#" />
 				</div>
 
-				<p className={styles.t2}>Program Committee Co-Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/LoraAroyo.webp" person="Lora Aroyo" affiliation="Google" socialLink="https://lora-aroyo.org/" />
-					<OrganizerCard image="/images/committee/CarlosCastillo.webp" person="Carlos Castillo" affiliation="ICREA" socialLink="http://chato.cl/research/vitae" />
-					<OrganizerCard image="/images/committee/GeertJanHouben.jpeg" person="Geert-Jan Houben" affiliation="TU Delft" socialLink="https://www.wis.ewi.tudelft.nl/houben" />
+
+				<p className="t2">Special Track: Web4Good</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Alex Jaimes.jpeg" person="Alex Jaimes" affiliation="Dataminr" socialLink="http://www.alexjaimes.com/" />
+					<CommitteeCard imageUrl="/images/committee/default.jpeg" person="TBC" affiliation="TBC" socialLink="#" />
 				</div>
 
-				<p className={styles.t2}>Tutorial Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/OlafHartig.jpeg" person="Olaf Hartig" affiliation="Linköping University" socialLink="http://olafhartig.de/" />
-					<OrganizerCard image="/images/committee/ValeriaFionda.jpeg" person="Valeria Fionda" affiliation="University of Calabria" socialLink="https://www.mat.unical.it/fionda/" />
+				<p className="t2">Proceedings Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Filip Ilievski.jpeg" person="Filip Ilievski" affiliation="ISI/USC" socialLink="https://usc-isi-i2.github.io/ilievski/" />
+					<CommitteeCard imageUrl="/images/committee/Daniel Garijo.jpeg" person="Daniel Garijo" affiliation="UPM" socialLink="https://dgarijo.com/" />
+					<CommitteeCard imageUrl="/images/committee/Lionel Medini.jpeg" person="Lionel Medini" affiliation="U Lyon 1" socialLink="https://www.knowledgegraph.tech/speakers/joshua-shinavier/" />
 				</div>
 
-				<p className={styles.t2}>Workshop Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/RiccardoTommasini.jpeg" person="Riccardo Tommasini" affiliation="University of INSA Lyon" socialLink="https://riccardotommasini.com/" />
-					<OrganizerCard image="/images/committee/FemkeOngenae.png" person="Femke Ongenae" affiliation="Ghent University" socialLink="https://sites.google.com/view/femkeongenae/home?authuser=0" />
+				<p className="t2">Sponsor Chairs</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/ChenHuajun.jpeg" person="Chen Huajun" affiliation="Zhejiang University" socialLink="https://person.zju.edu.cn/en/huajun" />
+					<CommitteeCard imageUrl="/images/committee/EdgarMeij.jpeg" person="Edgar Meij" affiliation="Bloomberg" socialLink="https://edgar.meij.pro/" />
+					<CommitteeCard imageUrl="/images/committee/JoshuaShinavier.jpeg" person="Josh Shinavier" affiliation="Linkedin" socialLink="https://www.knowledgegraph.tech/speakers/joshua-shinavier/" />
 				</div>
 
-				<p className={styles.t2}>Posters and Demos Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/LorenaEtcheverry.jpeg" person="Lorena Etcheverry" affiliation="Universidad de la República de Uruguay" socialLink="https://www.researchgate.net/profile/Lorena-Etcheverry" />
-					<OrganizerCard image="/images/committee/MariaPovedaVillalon.jpeg" person="María Poveda Villalón" affiliation="Universidad Politécnica de Madrid" socialLink="https://thepetiteontologist.wordpress.com/about/" />
+				<p className="t2">Local Volunteers</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Song Wang.jpeg" person="Song Wang" affiliation="UT Austin" socialLink="https://www.linkedin.com/in/song-wang-424369151/" />
 				</div>
 
-				<p className={styles.t2}>W3C and Developer</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/PierreAntoineChampin.jpeg" person="Pierre-Antoine Champin" affiliation="Université Claude Bernard Lyon 1" socialLink="https://perso.liris.cnrs.fr/pierre-antoine.champin/en/" />
+				<p className="t2">Global Volunteers</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Mark Schueler.jpeg" person="Mark Schueler" affiliation="" socialLink="" />
+					<CommitteeCard imageUrl="/images/committee/Sebastien Forget.jpeg" person="Sebastien Forget" affiliation="" socialLink="" />
 				</div>
 
-				<p className={styles.t2}>Industry Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/AnnaLisaGentile.jpeg" person="Anna Lisa Gentile" affiliation="IBM Research" socialLink="https://anligentile.github.io/" />
-					<OrganizerCard image="/images/committee/PetraSelmer.webp" person="Petra Selmer" affiliation="Neo4j" socialLink="https://www.linkedin.com/in/petra-selmer-phd-61b291/?originalSubdomain=uk" />
+				<p className="t2">Communications</p>
+				<div className="committee-section">
+					<CommitteeCard imageUrl="/images/committee/Jilie Zeng.jpeg" person="Jilie Zeng" affiliation="UT Austin" socialLink="https://www.linkedin.com/in/zengjilie/" />
+					<CommitteeCard imageUrl="/images/committee/Hady Wirawan LAUW.jpeg" person="Hady Wirawan LAUW" affiliation="Singapore Management University" socialLink="https://www.hadylauw.com/" />
 				</div>
 
-				<p className={styles.t2}>Sponsor Chairs</p>
-				<div className={styles.orgSection}>
-					<OrganizerCard image="/images/committee/ChenHuajun.jpeg" person="Chen Huajun" affiliation="Zhejiang University" socialLink="https://person.zju.edu.cn/en/huajun" />
-					<OrganizerCard image="/images/committee/EdgarMeij.jpeg" person="Edgar Meij" affiliation="Bloomberg" socialLink="https://edgar.meij.pro/" />
-					<OrganizerCard image="/images/committee/JoshuaShinavier.jpeg" person="Josh Shinavier" affiliation="Linkedin" socialLink="https://www.knowledgegraph.tech/speakers/joshua-shinavier/" />
-				</div>
-
-				<p className={styles.t2}>Organized by</p>
-				<div className={styles.orgSection} style={{ flexDirection: 'column' }}>
+				<p className="t2">Organized by</p>
+				<div className="committee-section" style={{ flexDirection: 'column' }}>
 					<img src="/ischool.png" alt="" width="300px" style={{ margin: 20 }} />
 					<img src="/dataWorld.webp" alt="" width="200px" style={{ margin: 20 }} />
 				</div>
 			</div>
+
 			<Footer />
 		</>
 	)

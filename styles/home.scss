@@ -1,0 +1,298 @@
+.bg-img {
+    width: 100%;
+    height: 80vh;
+    background-image: url("/images/home.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    .bg-color {
+        background-color: rgba(93, 69, 123, 0.7);
+        width: 100%;
+        height: 100%;
+
+        .home-info {
+            transform: translate();
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translate(0, 25vh);
+
+            .home-title {
+                text-transform: uppercase;
+                background: linear-gradient(90deg, #DAF055, #FFFFFC);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 0;
+
+                @media only screen and (min-width:1000px) {
+                    font-size: 4rem;
+                    letter-spacing: .2rem;
+                }
+            }
+
+            .home-date {
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                color: white;
+                font-weight: 500;
+                margin: 0;
+                margin-bottom: 20px;
+
+                @media only screen and (min-width:1000px) {
+                    font-size: 2rem;
+                    letter-spacing: .2rem;
+                }
+            }
+
+            .home-btn {
+                text-transform: uppercase;
+                color: #D9EF53;
+                font-size: .8rem;
+                letter-spacing: .2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 40px;
+                border: 1px solid #DAF055;
+                cursor: pointer;
+                transition: background-color, border, letter-spacing;
+                transition-duration: 0.2s;
+                transition-timing-function: ease;
+
+                span {
+                    letter-spacing: normal;
+                }
+
+                &:hover {
+                    letter-spacing: .3rem;
+                    background-color: #DAF055;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.t1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-top: 50px;
+}
+
+.t2 {
+    margin-top: 40px;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+
+// .winner-btn {
+//     background-color: #DAF055;
+//     text-align: center;
+//     padding: 15px;
+//     cursor: pointer;
+
+//     &:hover .winnerText {
+//         letter-spacing: .3rem;
+//     }
+// }
+
+// .winner-text {
+//     text-transform: uppercase;
+//     letter-spacing: .2rem;
+//     font-weight: 500;
+//     font-size: 1rem;
+//     transition: letter-spacing .2s ease;
+// }
+
+// .keynote-img {
+//     width: 100%;
+//     background-image: url("/images/austin.jpeg");
+//     background-size: cover;
+//     background-position: center;
+
+//     .keynote-bg-color {
+//         padding: 50px 20px;
+//         width: 100%;
+//         text-align: center;
+//         background-color: rgba(93, 69, 123, 0.7);
+//         backdrop-filter: blur(5px);
+
+//         .keynote-title {
+//             font-size: 1rem;
+//             text-transform: uppercase;
+//             letter-spacing: .2rem;
+//             color: white;
+//         }
+
+//         .keynote-speakers {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             max-width: 850px;
+//             flex-wrap: wrap;
+//             margin-left: auto;
+//             margin-right: auto;
+
+//             .keynote-speaker {
+//                 margin: 15px;
+//                 cursor: pointer;
+
+//                 .keynote-img {
+//                     height: 200px;
+//                     width: 250px;
+//                     background: lightgray;
+//                 }
+
+//                 .keynote-name {
+//                     font-size: 1rem;
+//                     font-weight: 500;
+//                     padding: 10px;
+//                     background-color: white;
+//                     margin: 0;
+//                 }
+//             }
+//         }
+
+//         .keynote-others {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             flex-wrap: wrap;
+//             max-width: 850px;
+//             margin-left: auto;
+//             margin-right: auto;
+//             margin-top: 100px;
+
+//             .keynote-other {
+//                 margin: 20px;
+
+//                 .other-title {
+//                     text-transform: uppercase;
+//                     color: white;
+//                     display: flex;
+//                     align-items: center;
+//                     padding-left: 20px;
+//                     background-color: black;
+//                     width: 300px;
+//                     height: 50px;
+//                     border: 1px solid white;
+
+//                     span {
+//                         letter-spacing: .2rem;
+//                         font-size: .7rem;
+//                     }
+//                 }
+
+//                 .other-img-wrapper {
+//                     background-color: #D9EF53;
+//                     padding: 15px;
+//                     width: 300px;
+//                     height: 170px;
+//                     border: 1px solid white;
+//                     cursor: pointer;
+
+//                     .other-img {
+//                         width: 100%;
+//                         height: 100%;
+//                         background-image: url("/images/conference.jpeg");
+//                         background-size: contain;
+
+//                         .other-bg-color {
+//                             width: 100%;
+//                             height: 100%;
+//                             background-color: rgba(93, 69, 123, 0.7);
+//                         }
+//                     }
+
+//                     .otherImg2 {
+//                         width: 100%;
+//                         height: 100%;
+//                         background-image: url("/images/austin.jpeg");
+//                         background-size: contain;
+
+//                         .otherBgColor {
+//                             width: 100%;
+//                             height: 100%;
+//                             background-color: rgba(93, 69, 123, 0.7);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .sponsors {
+//     margin: 20px;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     .sponsorTitle {
+//         text-transform: uppercase;
+//         letter-spacing: .2rem;
+//     }
+
+//     .sponsorRank {
+//         letter-spacing: .2rem;
+//         font-size: .8rem;
+//         margin-top: 50px;
+//     }
+
+//     .sponsorWrapper {
+//         display: flex;
+//         align-items: center;
+//         flex-wrap: wrap;
+//         justify-content: center;
+
+//         .sponsorCard {
+//             background-color: lightgray;
+//             width: 200px;
+//             height: 50px;
+//             margin: 10px;
+//         }
+//     }
+// }
+
+.committee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .committee-section{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media only screen and (max-width:700px) {
+            flex-direction: column;
+
+        }
+
+        .dw {
+            width: 200px;
+            object-fit: contain;
+            margin: 20px;
+        }
+
+        .is {
+            width: 300px;
+            object-fit: contain;
+            margin: 20px;
+        }
+    }
+}
+

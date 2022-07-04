@@ -4,13 +4,12 @@
     padding: 20px;
     text-align: center;
 
-    .footerTitle {
+    .footer-title {
         color: white;
     }
 
-    .footerSocial {
-
-        .socialLink {
+    .footer-social {
+        .footer-social-link {
             display: inline-block;
             background-color: white;
             cursor: pointer;
@@ -23,7 +22,7 @@
 
 }
 
-.text {
+.footer-text {
     text-align: center;
     font-size: .7rem;
 }
