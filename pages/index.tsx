@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
+import { CSSProperties } from 'react';
+import { useState } from 'react';
 import Head from 'next/head'
-import NavBar from '../comps/NavBar';
+import Header from '../comps/Header';
 import Footer from '../comps/Footer';
 import CommitteeCard from '../comps/CommitteeCard';
 
@@ -9,8 +11,8 @@ const Home: NextPage = () => {
 	const numOfSpeakers: number[] = [1, 1, 1];
 
 	return (
-		<>
-			<NavBar />
+		<div className='home'>
+			<Header />
 
 			<Head>
 				<title>International World Wide Web Conference 2023</title>
@@ -137,7 +139,7 @@ const Home: NextPage = () => {
 			</div>
 
 			<Footer />
-		</>
+		</div>
 	)
 }
 
