@@ -17,9 +17,11 @@ function Header() {
   return (
     <>
       <nav className="header">
-        <div className="header-logo">
-          <img src="/www-logo.svg" alt="" width={180} />
-        </div>
+          <a >
+            <div className="header-logo">
+              <img src="./www-logo.svg" alt="" width={180} />
+            </div>
+          </a>
 
         <a href="#"
           className={showNav ? "header-toggle hidden" : "header-toggle"}
@@ -70,9 +72,11 @@ function Header() {
                   return (
                     <ul id="menu-1">
                       <li className="nav-option nav-link">
-                        <Link href="/research-track">
+                        {/* <Link href="./research-track.html"> */}
+                        <a href='./research-track.html'>
                           <span>Research Track</span>
-                        </Link>
+                        </a>
+                        {/* </Link> */}
                       </li>
                     </ul>
                   )

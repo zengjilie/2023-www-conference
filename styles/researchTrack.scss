@@ -1,0 +1,21 @@
+.research {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .research-header {
+        margin-bottom: 50px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    a{
+        color:rgb(107, 107, 255);
+        font-weight: 500;
+    }
+
+}
