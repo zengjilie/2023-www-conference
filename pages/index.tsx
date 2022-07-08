@@ -28,7 +28,7 @@ const Home: NextPage = () => {
 					<div className="home-info">
 						<h1 className="home-title">Welcome to The Web Conference 2023 in Austin, Texas, USA</h1>
 						<p className="home-date">May 1-5, 2023</p>
-						<a className="home-btn">More Info Soon</a>
+						<a href="./research-track.html" className="home-btn">Research Tracks Preliminary Call For Papers (CFP)</a>
 					</div>
 				</div>
 			</div>
@@ -117,6 +117,7 @@ const Home: NextPage = () => {
 				<p className="t2">Local Volunteers</p>
 				<div className="committee-section">
 					<CommitteeCard imageUrl="./images/committee/Song Wang.jpeg" person="Song Wang" affiliation="UT Austin" socialLink="https://www.linkedin.com/in/song-wang-424369151/" />
+					<CommitteeCard imageUrl="./images/committee/Cynthia Henry.jpeg" person="Cynthia Henry" affiliation="Texas Tech University" socialLink="https://guides.library.ttu.edu/chenry" />
 				</div>
 
 				<p className="t2">Global Volunteers</p>

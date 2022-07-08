@@ -17,11 +17,11 @@ function Header() {
   return (
     <>
       <nav className="header">
-          <a >
-            <div className="header-logo">
-              <img src="./www-logo.svg" alt="" width={180} />
-            </div>
-          </a>
+        <a href='./index.html'>
+          <div className="header-logo">
+            <img src="./www-logo.svg" alt="" width={180} />
+          </div>
+        </a>
 
         <a href="#"
           className={showNav ? "header-toggle hidden" : "header-toggle"}
