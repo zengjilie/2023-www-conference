@@ -1,4 +1,4 @@
-import type { CommitteeCardType } from '../global/types';
+import type { CommitteeCardType } from '../../global/types';
 import Image from 'next/image';
 
 function OrganizerCard(props: CommitteeCardType) {

@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import { CSSProperties } from 'react';
 import { useState } from 'react';
 import Head from 'next/head'
-import Header from '../comps/Header';
-import Footer from '../comps/Footer';
-import CommitteeCard from '../comps/CommitteeCard';
+import Header from '../comps/Header/Header';
+import Footer from '../comps/Footer/Footer';
+import CommitteeCard from '../comps/CommitteeCard/CommitteeCard';
 
 const Home: NextPage = () => {
 

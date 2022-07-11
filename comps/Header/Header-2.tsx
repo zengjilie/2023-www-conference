@@ -6,13 +6,13 @@ function Header() {
   const [showNav, setShowNav] = useState(false);
   const [levelTowMenu, setLevelTwoMenu] = useState("");
 
-  const navLevelOneHandler = (currentMenu: string) => {
-    if (currentMenu === levelTowMenu) {
-      setLevelTwoMenu("");
-    } else {
-      setLevelTwoMenu(currentMenu);
-    }
-  }
+  // const navLevelOneHandler = (currentMenu: string) => {
+  //   if (currentMenu === levelTowMenu) {
+  //     setLevelTwoMenu("");
+  //   } else {
+  //     setLevelTwoMenu(currentMenu);
+  //   }
+  // }
 
   return (
     <>
