@@ -102,7 +102,7 @@ const Home: NextPage = () => {
 
 				<p className="t2">Proceedings Chairs</p>
 				<div className="committee-section">
-					<CommitteeCard imageUrl="./images/committee/Filip Ilievski.jpeg" person="Filip Ilievski" affiliation="ISI/USC" socialLink="https://usc-isi-i2.github.io/ilievski/" />
+					<CommitteeCard imageUrl="./images/committee/Filip Ilievski.jpeg" person="Filip Ilievski" affiliation="USC/ISI" socialLink="https://usc-isi-i2.github.io/ilievski/" />
 					<CommitteeCard imageUrl="./images/committee/Daniel Garijo.jpeg" person="Daniel Garijo" affiliation="UPM" socialLink="https://dgarijo.com/" />
 					<CommitteeCard imageUrl="./images/committee/Lionel Medini.jpeg" person="Lionel Medini" affiliation="U Lyon 1" socialLink="https://perso.liris.cnrs.fr/lionel.medini/" />
 				</div>

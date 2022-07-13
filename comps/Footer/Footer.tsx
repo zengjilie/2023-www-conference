@@ -1,19 +1,21 @@
+import styles from './Footer.module.scss';
 
 function Footer() {
   return (
     <>
-      <div className="footer">
-        <p className="footer-title">The Web Conference @ Austin</p>
-        <div className="footer-socials">
-          <a href="" className="footer-socialLink"></a>
-          <a href="" className="footer-socialLink"></a>
-          <a href="" className="footer-socialLink"></a>
-          <a href="" className="footer-socialLink"></a>
-          <a href="" className="footer-socialLink"></a>
+      <div className={styles.footer}>
+        <p className={styles.footerTitle}>The Web Conference @ Austin</p>
+        <div className={styles.footerSocial}>
+          <a href="" className={styles.footerSocialLink}></a>
+          <a href="" className={styles.footerSocialLink}></a>
+          <a href="" className={styles.footerSocialLink}></a>
+          <a href="" className={styles.footerSocialLink}></a>
+          <a href="" className={styles.footerSocialLink}></a>
+          <a href="" className={styles.footerSocialLink}></a>
         </div>
       </div>
 
-      <p className="footer-text">The Web Conference 2023 is organized by the School of Information at The University of Texas at Austin</p>
+      <p className={styles.footerText}>The Web Conference 2023 is organized by the School of Information at The University of Texas at Austin</p>
     </>
   )
 }

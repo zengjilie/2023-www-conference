@@ -1,7 +1,4 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -12,45 +9,82 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(5px);
 
-    .headerLogo {
-        cursor: pointer;
-    }
+    .headerWrapper {
+        max-width: 1200px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    .headerList {
-        color: rgb(183, 183, 183);
-        position: absolute;
-        top: 0;
-        left: 0;
+        .headerLogo {
+            cursor: pointer;
+        }
+
+        .headerList {
+            color: rgb(220, 220, 220);
+            display: flex;
 
 
-        ul {
-            list-style: none;
-            margin: 0;
+            .headerLevelOne {
+                position: relative;
 
+                .headerOptionOne {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    cursor: pointer;
 
-            .nav-option {
-                display: flex;
-                align-items: center;
-                width: 140px;
-                display: flex;
-                justify-content: space-between;
-                font-size: 1.2rem;
-                cursor: pointer;
-                margin: 0 10px 20px 100px;
+                    span {
+                        line-height: 80px;
+                    }
+
+                    .headerIcon {
+                        padding-top: 10px;
+                        padding-left: 20px;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &:hover .headerLevelTwo {
+                    display: flex;
+                }
 
                 &:hover {
                     color: white;
                 }
 
-                svg {
-                    width: 1.8rem;
-                    height: 1.8rem;
+                .headerLevelTwo {
+                    display:none;
+                    flex-direction: column;
+                    background-color:white;
+                    color: black;
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    border-radius: .2rem;
+                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+
+                    .headerOptionTwo {
+                        cursor: pointer;
+                        white-space: nowrap;
+                        padding: 10px;
+                        border-radius: .2rem;
+
+                        &:hover {
+                            background: rgb(232, 232, 232);
+                        }
+                    }
+
                 }
             }
+
+            // 
         }
     }
-}
-
-.hidden {
-    display: none;
 }
