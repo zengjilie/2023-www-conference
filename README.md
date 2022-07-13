@@ -14,9 +14,10 @@ run `yarn dev` to start project on localhost:3000
 
 run `yarn build` to create static website resource
 
-`/out/*` contains all static website resource
+## Todo
+* Try rounded square Logo
+* update members' pic
 
-[WARNING]
-The exported path isn't 100% correct. Right now you need to manually adjust the path of the image resources in both `.html` and `.css` :- (
+
 
 
