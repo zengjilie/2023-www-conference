@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "../comps/Header-2";
+import Header from "../comps/Header/Header";
 import Footer from "../comps/Footer/Footer";
 const ResearchTrack = () => {
 
