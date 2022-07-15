@@ -14,10 +14,6 @@ run `yarn dev` to start project on localhost:3000
 
 run `yarn build` to create static website resource
 
-## Todo
-* Try rounded square Logo
-* update members' pic
-
 
 
 
